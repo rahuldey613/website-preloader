@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Technical</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+</head>
+<body onload="myFunction()"> <!--ADD FOR PRELOADER-->
+
+
+
+<div id="loading"></div><!--ADD FOR PRELOADER-->
+<header>
+
+	<div class="header_menu">
+		<div class="logo">
+			<img src="t" alt="thapalogo">
+		</div>
+		<div class="menu_list">
+			<ul>
+				<li><a href="https://www.technical.c/" >home</a></li>
+				<li><a href="https://www.facebook.com/">mywork</a> </li>
+				<li><a href="#">portfolio</a></li>
+				<li><a href="https://www.instagram.com/lil__okie___/">aboutus</a></li>
+				<li><a href="#">contactus</a></li>
+			</ul>
+		</div>
+	</div>
+
+
+
+
+	<div class="header_content">
+		<h2>YOUTUBER | WEB DEVELOPER</h2>
+		<h1>Rahul Dey</h1>
+		<button><a href="https://www.youtube.com/channel/UCwfaAHy4zQUb2NOGXUCCA?view_as=subscriber">
+			Rahul's vlog
+		</a></button>
+
+		<button><a href="https:///">
+			Rahul blog
+		</a></button>
+	</div>
+</header>
+
+<br>
+	<div  style="text-align: center">
+		<div id= "dark1">
+			<input type="checkbox" class="checkbox" id="chk" />
+			<label class="label" for="chk">
+				<i class="fas fa-moon"></i>
+				<i class="fas fa-sun"></i>
+				<div class="ball"></div>
+			</label>
+		</div>
+
+		<div class="social-panel-container">
+			<div class="social-panel">
+				<p>Created with <i class="fa fa-heart"></i> by
+					<a target="_blank" href="https://florin-pop.com">Florin Pop</a></p>
+				<button class="close-btn"><i class="fas fa-times"></i></button>
+				<h4>Get in touch on</h4>
+				<ul>
+					<li>
+						<a href="https://www.patreon.com/florinpop17" target="_blank">
+							<i class="fab fa-discord"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://twitter.com/florinpop1705" target="_blank">
+							<i class="fab fa-twitter"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://linkedin.com/in/florinpop17" target="_blank">
+							<i class="fab fa-linkedin"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://facebook.com/florinpop17" target="_blank">
+							<i class="fab fa-facebook"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://instagram.com/florinpop17" target="_blank">
+							<i class="fab fa-instagram"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<button class="floating-btn">
+			Get in Touch
+		</button>
+
+		<div class="floating-text">
+			Part of <a href="https://florin-pop.com/blog/2019/09/100-days-100-projects" target="_blank">#100Days100Projects</a>
+		</div>
+
+		<h2 id="thapatext"  style="	font-family: 'Dosis', sans-serif;"> YouTube Video</h2><br>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/lYLlFCWexK0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	</div>
+	<br><br>
+	<footer style="width: 100%;height: 100px; background-color: #010101;">
+		<h4 style="color: white; font-family: 'Dosis', sans-serif; line-height: 100px; text-align: center"> @Copyright RAHULDEY 2020 </h4>
+	</footer>
+
+<script>
+		 //$(document).ready(function(){
+			 //	$('div#loading').removeAttr('id');
+		 //});
+		var preloader = document.getElementById("loading");//preloader js SCRIPT
+		// window.addEventListener('load', function(){
+		 	//preloader.style.display = 'none';
+		 	//})
+
+		function myFunction(){
+			preloader.style.display = 'none';
+		}//PRELOADER JS SCRIPT END
+		const chk = document.getElementById('chk');
+
+		chk.addEventListener('change', () => {
+			document.body.classList.toggle('dark');
+		});
+
+		// SOCIAL PANEL JS
+		const floating_btn = document.querySelector('.floating-btn');
+		const close_btn = document.querySelector('.close-btn');
+		const social_panel_container = document.querySelector('.social-panel-container');
+
+		floating_btn.addEventListener('click', () => {
+			social_panel_container.classList.toggle('visible')
+		});
+
+		close_btn.addEventListener('click', () => {
+			social_panel_container.classList.remove('visible')
+		});
+
+	</script>
+
+</body>
+</html>
